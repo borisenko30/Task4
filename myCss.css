@@ -1,0 +1,39 @@
+h2 {
+    text-align: center;
+}
+
+#item-name {
+    font-size: 20px;   
+}
+
+#add-item-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 455px;
+    margin-bottom: 20px;
+}
+
+.item {
+    background-color: #f2fff9;
+    width: 455px;
+    margin: 1px;
+    padding: 5px 0px 5px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.elem {
+    border: 0px solid;
+    display: inline;    
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #4409e3;
+    width: 415px;
+    background-color: inherit;
+    outline: none;
+}
+img {
+    width: 15px;
+    height: 15px;
+}
