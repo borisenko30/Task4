@@ -6,10 +6,10 @@ $(document).ready(function () {
     });
 // 'CheckAll' checkbox handler;    
     $('#checkall').click(function () {
-        if (!$(this).is(':checked')) {
-            $('.check:checked').click();
+        if ($(this).is(':checked')) {
+            $('.check:not(:checked)').click();
         } else {
-            $('.check.unchecked').click();
+            $('.check:checked').click();
         }
     });
 // 'DeleteAll' button handler;
@@ -20,7 +20,7 @@ $(document).ready(function () {
     function addItem() {
     
         var container = $('<div class="container">'),
-            checkbox = $('<input class="check unchecked" type="checkbox">'),
+            checkbox = $('<input class="check" type="checkbox">'),
             listItem = $('<input type="text">'),
             closeBtn = $('<img src="http://www.mycarbazar.com/images/close.gif" alt="close">');
         
@@ -64,7 +64,6 @@ $(document).ready(function () {
         checkbox.click(function () {
             strikeThroughToggle(listItem);
             myFade(listItem);
-            checkbox.toggleClass('unchecked');
             container.toggleClass('selected');
         });
         
